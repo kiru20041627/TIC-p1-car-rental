@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Header */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-weight: 700;
+}
+
+/* Table of Contents */
+.toc {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+.toc ul {
+    list-style: none;
+    padding: 0;
+}
+
+.toc ul li {
+    margin: 10px 0;
+}
+
+.toc ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.toc ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 10%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #4CAF50;
+    margin-top: 0;
+}
+
+section ul {
+    list-style-type: disc;
+    margin: 10px 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .toc, section {
+        margin: 20px 5%;
+    }
+}

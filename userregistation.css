@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.required {
+    color: red;
+}
+
+
+#otpButton:hover {
+    background-color: #0056b3;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+#termsLink {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#termsLink:hover {
+    text-decoration: underline;
+}
+
+/* iframe for Terms and condiation */
+.iframe-container {
+    width: 100%;
+    height: 80%;
+    overflow: hidden; /* Hide overflow from the container */
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove default border */
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Reviews</title>
+    <link rel="stylesheet" href="reviewdata.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <header>
+            <h1>Admin Dashboard</h1>
+            <a href="index.html" class="back-btn">Back to Feedback Form</a>
+        </header> -->
+        
+        <main>
+            <h2><ion-icon name="gift-outline"></ion-icon> User Reviews</h2>
+            <table id="reviewsTable">
+                <thead>
+                    <tr>
+                        <th>Car Registration Number</th>
+                        <th>Rental Date</th>
+                        <th>Comments</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Reviews will be inserted here dynamically -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <script src="reviewdata.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

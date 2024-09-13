@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="userregistation.css">
+</head>
+<body>
+    <div class="container">
+        <form id="registrationForm">
+            <h2><ion-icon name="person-add-outline"></ion-icon>  User Registration Form</h2>
+
+
+            <label for="name">Name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="nic">NIC / Passport Number <span class="required">*</span></label>
+            <input type="text" id="nic" name="nic" required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address">
+
+            <label for="contact">Contact Number</label>
+            <input type="text" id="contact" name="contact">
+
+            <label for="license">License Number</label>
+            <input type="text" id="license" name="license">
+
+            <label for="addressProof">Address Proof (CEB/Phone Bill)</label>
+            <input type="file" id="addressProof" name="addressProof">
+
+            <label for="username">Enter Userame <span class="required">*</span></label>
+            <input type="text" id="username" name="username" required>
+
+
+            <label for="password">Enter Password<span class="required">*</span></label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="password">Confom Password<span class="required">*</span></label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="iframe-container">
+                <iframe src="tc.html" frameborder="0" id="myIframe"></iframe>
+            </div>
+            <label>
+                <input type="checkbox" id="terms" name="terms" required>
+                Terms & Conditions <a href="tc.html" id="termsLink">Click Here to View T&C</a>
+            </label>
+           <!-- //-- <button type="button" id="otpButton">OTP</button>  -->
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="userregistation.js"></script>
+</body>
+</html>

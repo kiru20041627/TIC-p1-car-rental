@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Car</title>
+    <link href="car-request.css"rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2><ion-icon name="car-sport-outline"></ion-icon> Select here for Book your car now!</h2>
+
+        <div class="filter-buttons">
+            <button class="btn" id="filter-model">Filter by Model</button>
+            <button class="btn" id="filter-fuel-type">Filter by Fuel Type</button>
+            <button class="btn" id="filter-seat-count">Filter by Seat Count</button>
+            <button class="btn" id="filter-price-range">Filter by Price Range</button>
+        </div>
+
+        <form id="car-selection-form">
+            <label for="carName">Select Car</label>
+            <select id="carName" name="carName" required>
+                <option value="">Select Car</option>
+            </select>
+
+            <div class="car-details" id="car-details">
+                <!-- Car details will be injected here -->
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="btn" id="request-button">Request</button>
+            </div>
+        </form>
+    </div>
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+       <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="car-request.js"></script>
+</body>
+</html>

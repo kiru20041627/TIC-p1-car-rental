@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Registration</title>
+    <link rel="stylesheet" href="carregiststion.css">
+</head>
+<body>
+    <div class="container">
+        <h2><ion-icon name="add-outline"></ion-icon> Car Registration</h2>
+        <form id="car-registration-form">
+            <label for="model">Model</label>
+            <input type="text" id="model" name="model" required>
+            
+            <label for="registration-number">Registration Number</label>
+            <input type="text" id="registration-number" name="registration-number" required>
+            
+            <label for="manufactured-year">Manufactured Year</label>
+            <input type="number" id="manufactured-year" name="manufactured-year" required>
+            
+            <label for="price">Price</label>
+            <input type="number" id="price" name="price" required>
+            
+            <label for="color">Color</label>
+            <input type="text" id="color" name="color" required>
+            
+            <label for="seat-count">Seat Count</label>
+            <input type="number" id="seat-count" name="seat-count" required>
+            
+            <label for="fuel-type">Fuel Type</label>
+            <select id="fuel-type" name="fuel-type" required>
+                <option value="" disabled selected>Select Fuel Type</option>
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+            </select>
+            
+            <label for="insurance-date">Insurance Date</label>
+            <input type="date" id="insurance-date" name="insurance-date" required>
+            
+            <label for="last-oil-change">Last Oil Changed km</label>
+            <input type="number" id="last-oil-change" name="last-oil-change" required>
+            
+            <label for="photos">Photos <span class="photo-info">(Inside, Back, Front, Dashboard)</span></label>
+            <input type="file" id="photos" name="photos" accept="image/png" required>
+            
+            <label for="description">Description</label>
+            <input type="text" id="description" name="description" required>
+            
+            <label for="rc-book-copy">RC Book Copy</label>
+            <input type="text" id="rc-book-copy" name="rc-book-copy" required>
+            
+            <label for="modified-details">Modified Details</label>
+            <input type="text" id="modified-details" name="modified-details" required>
+            
+            <label for="extra-remarks">Extra Remarks</label>
+            <input type="text" id="extra-remarks" name="extra-remarks" required>
+            
+            <div class="button-group">
+                <button type="button" class="btn" id="back-to-home">Back to Home</button>
+                <button type="reset" class="btn">Reset</button>
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="carregiststion.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

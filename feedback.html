@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- <div class="dashboard">Home</div> -->
+<!-- Add Home Button/ Colse Button  -->
+
+            <div class="feedback"><ion-icon name="star-outline"></ion-icon> We Welcome your feedback!</div>
+        </div>
+        <form id="feedbackForm">
+            <label for="carRegNumber">Car Registration Number</label>
+            <input type="text" id="carRegNumber" name="carRegNumber" required>
+            
+            <label for="rentalDate">Rental Date</label>
+            <input type="date" id="rentalDate" name="rentalDate" required>
+            
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+            
+            <div class="rating">
+                <label>Rate Us</label>
+                <div class="stars">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+            </div>
+
+            <input type="hidden" id="rating" name="rating" value="5">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="feedback.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

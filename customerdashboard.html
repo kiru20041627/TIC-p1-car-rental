@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="Images\icons8-car-16.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="customerdashboard.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <span id="user-name">User</span> - Welcome to Car Rental Service Customer Dashboard
+    </div>
+    <div class="sidebar">
+        <a href="#" data-url="dashboadiframe.html" class="nav-link"><ion-icon name="home-outline" style="font-size: 25px;"></ion-icon> Home</a>
+        <a href="#" data-url="carview.html" class="nav-link"><ion-icon name="car-sport-outline" style="font-size: 25px;"></ion-icon> View Cars</a>
+        <a href="#" data-url="car-request.html" class="nav-link"><ion-icon name="car-outline" style="font-size: 25px;"></ion-icon> Book your Car</a>
+        <a href="#" data-url="feedback.html" class="nav-link"><ion-icon name="star-half-outline" style="font-size: 25px;"></ion-icon> Rate Us</a>
+        <a href="#" data-url="tc.html" class="nav-link"><ion-icon name="help-outline" style="font-size: 25px;"></ion-icon> Help</a>
+        <!-- <a href="#" data-url="userprofile.html" class="nav-link"><ion-icon name="person-circle-outline" style="font-size: 25px;"></ion-icon> Profile</a> -->
+        <a href="home.html" ><ion-icon name="log-out-outline" style="font-size: 25px;"></ion-icon> Sign Out</a>
+    </div>
+    <div class="main-content">
+        <div class="iframe-container">
+            <iframe id="contentFrame" src="dashboadiframe.html" title="Dashboard Content"></iframe>
+        </div>
+    </div>
+
+  <script src="customerdashboard.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

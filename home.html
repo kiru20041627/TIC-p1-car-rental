@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Management</title>
+    <link rel="icon" type="image/x-icon" href="Images\icons8-car-16.png">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <header>
+        <h1>Car Rental Management</h1>
+        <logo id="logo">
+            <img src="Images/new1.jpg" width="100px">
+        </logo>
+        <div class="date-select">
+            <div class="date-range-container">
+                <div class="datetime">
+                <label for="date-from">Start From: </label>
+                <input type="date" id="date-from" name="date-from">
+            </div>
+            <div class="datetime">
+                <label for="date-to">To: </label>
+                <input type="date" id="date-to" name="date-to">
+            </div>
+            <div class="datetime">
+                <button class="subbtn" onclick="handleSubmit()">Submit</button>
+            </div>
+            </div>
+            <div>
+                <button class="sign-button" id="openPopupBtn">Sign In/Sign Up</button>
+            </div>
+            <!-- Sample Page of Admin Tab Pop up function Start -->
+            <!-- <input type="text" placeholder="search" class="search-box"> -->
+        </div>
+        <!-- Sample Page of Admin Tab Pop up function -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" id="closePopupBtn">&times;</span>
+                <!-- Start pup up page here -->
+                <!-- Signin/login Popup Massage Starts -->
+                <div class="container">
+                    <h3> <ion-icon name="person-add-outline"></ion-icon> User Login</h3>
+                    <h3>Car Rental Management System</h3>
+                    <p class="description">Please Enter for a Ride!</p>
+                    <button class="btn" id="sign-up">Sign Up</button>
+
+                    <button class="btn" id="log-in">Log In</button>
+                    
+                    <ion-icon name="car-outline">icon</ion-icon>
+                </div>
+                <!-- Signin/login Popup Massage Ends -->
+            </div>
+        </div>
+
+ <!-- Notificcation Bell starts -->
+        <!-- <header style="display: flex;justify-content: space-evenly;">
+            <input type="text"
+                style="width: 40%;background-color: rgb(247, 242, 234);border-radius: 15px;border: 2px black;margin: 20px;"
+                onkeyup="searchBike(event)" placeholder="Search Cars Here...">
+          <button id="userProfileBtn"> <div class="user" id="userProfile" style="margin: 20px 0 10px 0;"></button>  -->
+    
+            <!-- </div> -->
+            <div class="notification">
+                <button id="notifyBtn"><img src="Images\notification.png" style="height: 30px;width: 30px;"></button>
+            </div>
+        <!-- </header> -->
+<!-- Notificcation Bell Ends -->
+
+        <!-- Ends pup up page here -->
+        <!-- Signin Start here -->
+        <!-- <div id="popup2" class="popup2">
+            <div class="popup-content2">
+                <div class="container">
+                    <h2>Sign In</h2>
+                    <p class="welcome">Welcome back!</p>
+                    <form id="sign-in-form">
+                        <label for="username">User Name</label>
+                        <input type="text" id="username" name="username" required>
+
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+
+                        <button type="submit" class="btn">Log In</button>
+                    </form>
+                    <button class="btn" id="sign-up">Sign Up</button>
+                    <p class="register">New User? <a href="userregistation.html">Please Register Here</a></p>
+                </div>
+            </div>
+        </div> -->
+        <!-- Signin Endas here -->
+    </header>
+    <main>
+        <img src="Images/luxary1.jpg" alt="profile pic" width="100%">
+    </main>
+    <footer>
+       
+        <p class="copyright">Copyright reservred private limited@</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="home.js"></script>
+</body>
+
+</html>

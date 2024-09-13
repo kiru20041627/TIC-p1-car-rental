@@ -1,0 +1,112 @@
+cars
+[
+  {
+    "model": "Honda City",
+    "registrationNumber": "VR6825",
+    "manufacturedYear": "2000",
+    "price": "5000",
+    "color": "black",
+    "seatCount": "4",
+    "fuelType": "Petrol",
+    "insuranceDate": "2024-08-28",
+    "lastOilChange": "3246457",
+    "photos": "blob:null/9777d0ff-18e9-4241-b1b1-938f92832a35",
+    "description": "good",
+    "rcBookCopy": "2354",
+    "modifiedDetails": "old car",
+    "extraRemarks": "not good"
+  }
+]
+users
+[
+  {
+    "name": "Kiruthigan",
+    "nic": "28745646674",
+    "address": "Kokuvil",
+    "contact": "077355535",
+    "license": "652625",
+    "addressProof": {},
+    "username": "kiru",
+    "password": "12345",
+    "terms": "on"
+  },
+  {
+    "name": "AmalistaStephenRex",
+    "nic": "200354513111",
+    "address": "Sillalai",
+    "contact": "0769980555",
+    "license": "58583638",
+    "addressProof": {},
+    "username": "amalista",
+    "password": "123456",
+    "terms": "on"
+  },
+  {
+    "name": "Mohanakahanan",
+    "nic": "2002020202",
+    "address": "20/2Anthirasn adoiasdfhiohash",
+    "contact": "0768908787",
+    "license": "2368246864986",
+    "addressProof": {},
+    "username": "Mohan",
+    "password": "Mohan22004",
+    "terms": "on"
+  },
+  {
+    "name": "rasmilan",
+    "nic": "200316200169",
+    "address": "koomankulqam",
+    "contact": "0776786",
+    "license": "83623684",
+    "addressProof": {},
+    "username": "rasmilan",
+    "password": "1234",
+    "terms": "on"
+  },
+  {
+    "name": "Kanistan",
+    "nic": "20032800012",
+    "address": "vavuniya",
+    "contact": "0760631725",
+    "license": "xxxxxx",
+    "addressProof": {},
+    "username": "Rocky",
+    "password": "1234",
+    "terms": "on"
+  },
+  {
+    "name": "rengheson",
+    "nic": "2004455201",
+    "address": "134, post office road trinco",
+    "contact": "07765461463",
+    "license": "65446554324",
+    "addressProof": {},
+    "username": "rahu",
+    "password": "00000",
+    "terms": "on"
+  },
+  {
+    "name": "Abish",
+    "nic": "200416701608",
+    "address": "Omanthai",
+    "contact": "0763443570",
+    "license": "7897654",
+    "addressProof": {},
+    "username": "abish",
+    "password": "abhi@15",
+    "terms": "on"
+  },
+  {
+    "name": "Nithusha",
+    "nic": "200352800079",
+    "address": "Jaffna",
+    "contact": "0762738647",
+    "license": "5828525825",
+    "addressProof": {},
+    "username": "Nithu",
+    "password": "2801",
+    "terms": "on"
+  }
+]
+
+

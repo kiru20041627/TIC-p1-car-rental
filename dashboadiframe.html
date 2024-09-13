@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page with Slideshow</title>
+    <style>
+        /* Reset some basic elements */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color:  #2b83d6;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .slides {
+            display: none;
+            width: 100%;
+        }
+
+        .active-slide {
+            display: block;
+        }
+
+        .slide-image {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev {
+            left: 0;
+            border-radius: 3px 3px 0 0;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .dots-container {
+            text-align: center;
+            padding: 10px 0;
+            background: #f4f4f4;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        @media screen and (max-width: 768px) {
+            header {
+                padding: 10px 0;
+                font-size: 24px;
+            }
+
+            .prev, .next {
+                font-size: 14px;
+            }
+        }
+
+        .content-section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .content-section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .content-section ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><ion-icon name="happy-outline" style="font-size: 40px;"></ion-icon> Enjoy The Ride!</h1>
+    </header>
+
+    <div class="container">
+        <div class="slideshow-container">
+            <div class="slides active-slide">
+                <img src="Images/begins.png" class="slide-image" alt="Image 1">
+            </div>
+            <div class="slides">
+                <img src="Images/last image.jpg" class="slide-image" alt="Image 2">
+            </div>
+            <div class="slides">
+                <img src="Images/last image.jpg" class="slide-image" alt="Image 3">
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+
+        <!-- The dots/circles -->
+        <div class="dots-container">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <!-- Content Section with Bullet Points -->
+        <div class="content-section">
+            <h2>Why Choose Our Service?</h2>
+            <ul>
+                <li>Wide range of luxury and budget cars to choose from.</li>
+                <li>Affordable pricing with no hidden charges.</li>
+                <li>24/7 customer support to assist you anytime.</li>
+                <li>Convenient pick-up and drop-off locations.</li>
+                <li>Fully insured vehicles with regular maintenance.</li>
+            </ul>
+        </div>
+    </div>
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    // Automatic slideshow
+    let slideInterval = setInterval(() => {
+        showSlides(++slideIndex);
+    }, 5000); // Change slide every 5 seconds
+    
+    // Next/previous controls
+    document.querySelector('.next').addEventListener('click', () => {
+        clearInterval(slideInterval); // Stop automatic slideshow
+        showSlides(++slideIndex);
+        slideInterval = setInterval(() => {
+            showSlides(++slideIndex);
+        }, 5000); // Restart automatic slideshow
+    });
+    
+    document.querySelector('.prev').addEventListener('click', () => {
+        clearInterval(slideInterval); // Stop automatic slideshow
+        showSlides(--slideIndex);
+        slideInterval = setInterval(() => {
+            showSlides(++slideIndex);
+        }, 5000); // Restart automatic slideshow
+    });
+    
+    // Thumbnail image controls
+    document.querySelectorAll('.dot').forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            clearInterval(slideInterval); // Stop automatic slideshow
+            showSlides(slideIndex = index);
+            slideInterval = setInterval(() => {
+                showSlides(++slideIndex);
+            }, 5000); // Restart automatic slideshow
+        });
+    });
+    
+    function showSlides(n) {
+        const slides = document.querySelectorAll('.slides');
+        const dots = document.querySelectorAll('.dot');
+    
+        if (n >= slides.length) { slideIndex = 0 }
+        if (n < 0) { slideIndex = slides.length - 1 }
+    
+        slides.forEach(slide => slide.style.display = 'none');
+        dots.forEach(dot => dot.classList.remove('active'));
+    
+        slides[slideIndex].style.display = 'block';
+        dots[slideIndex].classList.add('active');
+    }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
